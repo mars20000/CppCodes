@@ -17,6 +17,7 @@ int main()
     cout << "\nInorder traversal of the mirror tree"
          << " is \n";  
     inOrder(root); 
+    cout<<"efpefjie";
       
     return 0;  
 }
