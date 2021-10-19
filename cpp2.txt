@@ -1,0 +1,23 @@
+// Driver Code 
+int main() 
+{ 
+    struct Node *root = newNode(1); 
+    root->left = newNode(2); 
+    root->right = newNode(3); 
+    root->left->left = newNode(4); 
+    root->left->right = newNode(5);  
+      
+ 	root->right = newNode(3); 
+    root->left->left = newNode(4); 
+    root->left->right = newNode(5); 
+      
+    /* Convert tree to its mirror */
+    mirror(root);  
+      
+    /* Print inorder traversal of the mirror tree */
+    cout << "\nInorder traversal of the mirror tree"
+         << " is \n";  
+    inOrder(root); 
+      
+    return 0;  
+}
